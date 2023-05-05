@@ -1,1 +1,33 @@
-<router-outlet></router-outlet>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="app.component.html">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Welcome to My Website</h1>
+      <p>This is some sample text for my webpage.</p>
+      
+      <a
+        (click)="loadPosts()"
+        class="btn btn-lg btn-primary"
+        href="javascript::void(0)"
+        role="button"       
+      > Call now </a>
+      
+      <div *ngFor="let post of posts">
+        <h1>{{post.title}}</h1>
+        <p>{{post.body}}</p>
+        
+      </div>
+    </main>
+  </body>
+</html>

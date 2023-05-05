@@ -1,0 +1,43 @@
+nav {
+    background-color: #333;
+    ul {
+        list-style: none;
+        display: flex;
+        li {
+        margin: 0 10px;
+        a {
+            color: #fff;
+            text-decoration: none;
+            &:hover {
+            text-decoration: underline;
+            }
+        }
+        }
+    }
+}
+  
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        &:hover {
+        background-color: #555;
+        cursor: pointer;
+        }
+    }
+}
